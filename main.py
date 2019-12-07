@@ -1,4 +1,6 @@
 import sys
+from tabulate import tabulate as tbl
+
 num = int(sys.argv[1])
 div = int(sys.argv[2])
 
@@ -6,6 +8,9 @@ def convert(num, div):
     nums = []
     rests = []
     quozs = []
+    nums.append("NUMERO")
+    rests.append("RESTO")
+    quozs.append("QUOZIENTE")
     nums.append(num)
     quoz = num
     rests.append(quoz % div)
@@ -15,8 +20,6 @@ def convert(num, div):
         quozs.append(quoz)
         nums.append(quoz)
         rests.append(resto)
-    print(nums)
-    print(quozs)
-    print(rests)
+    print(tbl([nums, quozs, rests]))
 
 convert(num, div)
