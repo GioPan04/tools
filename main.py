@@ -14,12 +14,15 @@ def convert(num, div):
     nums.append(num)
     quoz = num
     rests.append(quoz % div)
+    result = []
+    result.append([num, num // div, quoz % div])
     while quoz != 1:
         quoz = quoz // div
         resto = quoz % div
         quozs.append(quoz)
         nums.append(quoz)
         rests.append(resto)
-    print(tbl([nums, quozs, rests]))
+        result.append([quoz, quoz, resto])
+    print(tbl(result, headers=["NUMERO", "QUOZIENTE", "RESTO"]))
 
 convert(num, div)
