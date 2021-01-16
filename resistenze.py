@@ -1,6 +1,6 @@
 from tabulate import tabulate
 
-COLORS = ['black', 'brown', 'red', 'orange', 'yellow', 'green', 'ligthblue', 'purple', 'grey', 'white', 'gold', 'silver']
+COLORS = ['black', 'brown', 'red', 'orange', 'yellow', 'green', 'blue', 'purple', 'grey', 'white', 'gold', 'silver']
 TOLL = {
 	'gold': 5.0,
 	'silver': 10.0,
@@ -8,7 +8,7 @@ TOLL = {
 	'red': 2.0,
 	'orange': 3.0,
 	'green': 0.5,
-	'ligthBlue': 0.25,
+	'blue': 0.25,
 	'purple': 0.1,
 	'grey': 0.05,
 }
